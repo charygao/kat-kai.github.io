@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+よくESP8266/ESP32で遊んでます。
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+最近はESP32での開発のため、ArduinoよりESP-IDFを使ってます。
