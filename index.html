@@ -15,10 +15,8 @@ layout: default
       <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
       {% endif %}
       </section>
-      
+      <br>
       <div class="post">{{ post.date | date: "%F" }}</div>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-      <span class="disqus-comment-count" data-disqus-url="https://kat-kai.github.io{{ site.baseurl }}{{ post.url }}"></span>
     </article>
   {% endfor %}
 </div>
