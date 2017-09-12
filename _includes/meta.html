@@ -18,7 +18,6 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@katkai3" />
     <meta name="twitter:title" content="{{ page.title }}" />
-    {% if page.outline %}
-    <meta name="twitter:description" content="{{ page.outline }}" />
-    {% endif %}
+    {% if page.outline %}<meta name="twitter:description" content="{{ page.outline }}" />{% endif %}
+    {% if page.cargImage %}<meta name="twitter:image" content="{{ page.cargImage }}" />{% endif %}
     {% endif %}
