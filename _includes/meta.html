@@ -16,9 +16,9 @@
     <meta property="og:title" content="{{ page.title }}" />
 
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@flickr" />
+    <meta name="twitter:site" content="@katkai3" />
     <meta name="twitter:title" content="{{ page.title }}" />
-        {% if page.outline %}
-        <meta name="twitter:description" content="View the album on Flickr." />
-        {% endif %}
+    {% if page.outline %}
+    <meta name="twitter:description" content="{{ page.outline }}" />
+    {% endif %}
     {% endif %}
