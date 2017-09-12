@@ -19,5 +19,7 @@
     <meta name="twitter:site" content="@katkai3" />
     <meta name="twitter:title" content="{{ page.title }}" />
     {% if page.outline %}<meta name="twitter:description" content="{{ page.outline }}" />{% endif %}
-    {% if page.cardImage %}<meta name="twitter:image" content="{{ page.cardImage }}" />{% endif %}
+    {% if page.cardImage %}<meta name="twitter:image" content="{{ page.cardImage }}" />
+    {% else %}<meta name="twitter:image" content="https://avatars0.githubusercontent.com/u/21113258?v=4&s=460" />
+    {% endif %}
     {% endif %}
