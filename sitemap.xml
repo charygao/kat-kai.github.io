@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
+<url>
+  <loc>https://kat-kai.github.io/</loc>
+  <priority>1.0</priority>
+  <lastmod>2017-09-18T23:56:51+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://kat-kai.github.io/about</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://kat-kai.github.io/ESP8266%E3%81%A7%E9%AB%98%E9%80%9FGPIO%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/</loc>
+  <priority>0.8</priority>
+  <lastmod>2017-09-18T23:56:51+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://kat-kai.github.io/1-CPU%E3%82%AF%E3%83%AD%E3%83%83%E3%82%AF%E6%95%B0%E5%8F%96%E5%BE%97/</loc>
+  <priority>0.8</priority>
+  <lastmod>2017-09-18T23:56:51+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://kat-kai.github.io/0-hello-world/</loc>
+  <priority>0.8</priority>
+  <lastmod>2017-09-18T23:56:51+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+
+</urlset>
