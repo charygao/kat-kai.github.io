@@ -8,8 +8,8 @@ outline: Github Pages 始めました。
 
 ESP32でのBluetoothゲームパッド作製を目標に取り組んでいます。現状はこんな感じ。
 
-<blockquote class="twitter-tweet tw-align-center" data-lang="ja"><p lang="ja" dir="ltr">ESP32を使ってBluetooth HIDでN64コントローラをマウス化してみた！Bボタンが左クリック、Aボタンが右クリック。まだジョイスティックじゃない <a href="https://twitter.com/hashtag/ESP32?src=hash">#ESP32</a> <a href="https://t.co/OSZ26rkeHW">pic.twitter.com/OSZ26rkeHW</a></p>&mdash; kat-kai (@katkai3) <a href="https://twitter.com/katkai3/status/903770227686723584">2017年9月2日</a></blockquote>
-
+<blockquote class="twitter-tweet tw-align-center" data-lang="ja"><p lang="ja" dir="ltr">ESP32を使ってBluetooth HIDでN64コントローラをマウス化してみた！Bボタンが左クリック、Aボタンが右クリック。まだジョイスティックじゃない <a href="https://twitter.com/hashtag/ESP32?src=hash&amp;ref_src=twsrc%5Etfw">#ESP32</a> <a href="https://t.co/OSZ26rkeHW">pic.twitter.com/OSZ26rkeHW</a></p>&mdash; kat-kai (@katkai3) <a href="https://twitter.com/katkai3/status/903770227686723584?ref_src=twsrc%5Etfw">2017年9月2日</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 またQiitaだけでなく、こちらでもESP8266/ESP32での開発に関する情報を提供していきたいと思います。
 
