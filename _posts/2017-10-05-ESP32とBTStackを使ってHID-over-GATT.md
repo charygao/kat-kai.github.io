@@ -15,8 +15,7 @@ categories: [ESP32]
 ### BTstackの導入
 それでは、まずセットアップ済みのESP-IDFにBTstack developブランチを導入してみます。
 
-[BTstack Port for the Espressif ESP32 Platform](https://github.com/bluekitchen/btstack/tree/develop/port/esp32)には、
-```port/esp32/```で```./integrate_btstack.sh```を実行すれば良いみたいです。
+[BTstack Port for the Espressif ESP32 Platform](https://github.com/bluekitchen/btstack/tree/develop/port/esp32)には```port/esp32/```で```./integrate_btstack.sh```を実行すれば良いみたいです。
 
 しかしWindows MinGW32に導入する場合、以下の2つのファイルの修正が必要でした。
 - btstack/tool/compile_gatt.py
