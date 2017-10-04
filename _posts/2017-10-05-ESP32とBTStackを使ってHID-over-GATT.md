@@ -2,7 +2,7 @@
 layout: post
 title: ESP-IDF ESP32でのBTstackの導入とHID-over-GATTの利用
 outline: ESP32/BTstackを使ってHID-over-GATTマウスを動かしてみました。
-categories: [ESP-IDF ESP32],[BTstack],[Bluetooth]
+categories: [ESP32]
 ---
 
 こんばんは、kat-kaiです。今回はBTstackのHID-over-GATTによるマウスサンプルを使ってみます。
