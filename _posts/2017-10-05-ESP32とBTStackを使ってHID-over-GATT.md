@@ -24,7 +24,7 @@ categories: [ESP32]
 - btstack/port/esp32/integrate_btstack.sh
 
 
-まずはBTstack developブランチをダウンロードします。
+それでは実際に導入してみます。まず最初にBTstack developブランチをダウンロードします。
 
 ```
 $ git clone -b develop https://github.com/bluekitchen/btstack.git
