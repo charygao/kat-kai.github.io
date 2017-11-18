@@ -35,6 +35,8 @@ ESP32の開発環境として、ESP-IDF, Arduino ESP32, Micropythonなどがあ�
 - Micropython
     - Python 3.xで開発できる、らしい。
 
+これらのうち、今回のデモコードはESP-IDFで実装されております。
+
 ### ESP-IDFでのBluetooth Low Energy (BLE) HIDデバイスとしての利用について
 Bluetooth Low Energy (BLE)はBluetooth 4.0以降のことであり、省電力を目的とした規格です。  
 BLEでHIDデバイスとして振る舞うにはHOGP (HID-over-GATT Profile)と呼ばれるプロファイルを使う必要があります。
