@@ -328,6 +328,12 @@ footer {
 // @import "highlights";
 @import "svg-icons";
 
+pre {
+  overflow: auto;
+  font-size: 85%;
+  background-color: #f2f2f2;
+}
+
 code.highlighter-rouge {
   background-color: #f2f2f2;
   padding: 2px 4px;
