@@ -69,6 +69,7 @@ BLEでHIDデバイスとして振る舞うにはHOGP (HID-over-GATT Profile)と�
 それではデモコード中のキー入力を操作する箇所を見てみます。  
 実際のキー入力の制御は```ble_hidd_demo_main.c``` 233行目の```hid_demo_task```関数で行われています。
 
+```C
 void hid_demo_task(void *pvParameters)
 {
     vTaskDelay(1000 / portTICK_PERIOD_MS);
@@ -89,6 +90,8 @@ void hid_demo_task(void *pvParameters)
         }
     }
 }
+```
+
 
 ```esp_hidd_send_consumer_value```関数によって音量を上げ下げしています。  
 ここではコメントアウトされていますが、  
