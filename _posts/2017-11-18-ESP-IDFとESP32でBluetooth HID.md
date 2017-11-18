@@ -50,8 +50,8 @@ BLEでHIDデバイスとして振る舞うにはHOGP (HID-over-GATT Profile)と�
 今回、Espressif社より公式(現時点ではまだ非公式かも？)のデモが公開されました。  
 本デモコードでは、ライブラリを新たに導入する必要がないため、比較的容易に開発を始めることが出来ます。
   
-> Bluetooth Low Energy (BLE)によるHID-over-GATT Profileのデモコード    
-> [[TW#13919] Bluetooth HID implementation progress?](https://github.com/espressif/esp-idf/issues/782#issuecomment-342410213)
+- Bluetooth Low Energy (BLE)によるHID-over-GATT Profileのデモコード    
+[[TW#13919] Bluetooth HID implementation progress?](https://github.com/espressif/esp-idf/issues/782#issuecomment-342410213)
 
 ただ問題点として、人によってはパソコン側で認識できないこともあるそうなので  
 もし今回のデモコードの動作が不安定そうならBTstackを試してみるのも良いかもしれません。
@@ -67,7 +67,7 @@ BLEでHIDデバイスとして振る舞うにはHOGP (HID-over-GATT Profile)と�
 
 
 それではデモコード中のキー入力を操作する箇所を見てみます。  
-実際のキー入力の制御は```ble_hidd_demo_main.c``` 233行目の```hid_demo_task```関数で行われています
+実際のキー入力の制御は```ble_hidd_demo_main.c``` 233行目の```hid_demo_task```関数で行われています。
 
 ```
 void hid_demo_task(void *pvParameters)
