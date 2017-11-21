@@ -7,8 +7,7 @@ categories: [ESP32]
 
 こんばんは、kat-kaiです。今回はBTstackのHID-over-GATTによるマウスサンプルを使ってみます。
 
-__追記 (2017/11/21):__ BTstackを導入せずに、ESP-IDFでBluetooth HIDとして  
-動く[デモコードが公開](https://github.com/espressif/esp-idf/issues/782#issuecomment-342410213)されており、その[紹介記事](https://kat-kai.github.io/ESP-IDF%E3%81%A8ESP32%E3%81%A7Bluetooth-HID/)を書きました。
+__追記 (2017/11/21):__ BTstackを導入せずに、ESP-IDFでBluetooth HIDとして動く[デモコードが公開](https://github.com/espressif/esp-idf/issues/782#issuecomment-342410213)されており、その[紹介記事](https://kat-kai.github.io/ESP-IDF%E3%81%A8ESP32%E3%81%A7Bluetooth-HID/)を書きました。
 
 ### BTstackとは
 [BTstack](https://github.com/bluekitchen/btstack)とは[BlueKitchen’s](http://bluekitchen-gmbh.com/)によって実装されているBluetoothスタックです。
