@@ -10,7 +10,9 @@ categories: [ESP8266]
 
 ## はじめに
 ### なにを作ったの？
-[動画]
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="ja" dir="ltr">Arduino Advent Calendar 2017 9日目で紹介するIoTキッチンスケールの動画！スマートフォンからでも重さを取得できるようになりました！ <a href="https://t.co/bdcMemnujy">pic.twitter.com/bdcMemnujy</a></p>&mdash; kat-kai (@katkai3) <a href="https://twitter.com/katkai3/status/939388375613587457?ref_src=twsrc%5Etfw">December 9, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 今回は、インターネット経由で重さを取得できるIoTキッチンスケールを作りました！
 
