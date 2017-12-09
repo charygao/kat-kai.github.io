@@ -163,6 +163,8 @@ ESP32かESP8266を使って、また別のものを作ってみたいと思い�
 それでは！
 
 ## Appendix
+後ほどGitHubにアップロードします。  
+
 ### ESP8266_scale.ino
 ```
 #include "HX711.h"
