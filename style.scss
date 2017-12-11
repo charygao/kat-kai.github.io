@@ -50,9 +50,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
-  .post {
-    margin: 0;
-  }
   a {
     color: inherit;
   }
@@ -290,6 +287,9 @@ nav {
 }
 
 .post {
+  h1 {
+    margin: 0;
+  }
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
