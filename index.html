@@ -7,8 +7,11 @@ layout: default
     <article class="post">
       <div class="date">{{ post.date | date: "%F" }}</div>
       <h1 class="post"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      {% for tag in page.tags %}
+        <a href="/tags/{{ tag }}" class="tags">{{ tag }}</a>
+      {% endfor %}
+      
       <section class="post-excerpt" itemprop="description">
-        
       {% if post.outline %}
       <p>{{ post.outline }}</p>
       {% else %}
