@@ -2,7 +2,11 @@
 layout: post
 title: ESP-IDF ESP32でのBluetooth HIDの利用
 outline: Espressif社より先行公開されたBluetooth HIDデバイスのデモコードを動かしてみました。
-categories: [ESP32]
+tags: 
+- ESP32
+- ESP-IDF
+- BLE
+- HID
 ---
 
 こんばんは、kat-kaiです。
