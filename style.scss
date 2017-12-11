@@ -280,6 +280,14 @@ article.post {
   padding: 1em 0;
 }
 
+.tags a {
+  text-decoration: none;
+  padding: 2px 7px;
+  background: #ECEEF1;
+  border-radius: 3px;
+  margin: 0 2px;
+}
+
 .posts > .post {
   // padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
