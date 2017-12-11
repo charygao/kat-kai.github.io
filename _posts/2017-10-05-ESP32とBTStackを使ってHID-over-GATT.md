@@ -28,15 +28,15 @@ __追記 (2017/11/21):__ BTstackを導入せずに、ESP-IDFでBluetooth HIDと�
 
 それでは実際に導入してみます。まず最初にBTstack developブランチをダウンロードします。
 
-```
+```shell
 $ git clone -b develop https://github.com/bluekitchen/btstack.git
 $ cd btstack/tool
 ```
 
 次にbtstack/tool/compile_gatt.pyを修正します。707行目付近の```btstack_root = ...```を以下のように変更します。
 
-```
-    #btstack_root = os.path.abspath(os.path.dirname(sys.argv[0]) + '/..')
+```python
+    # btstack_root = os.path.abspath(os.path.dirname(sys.argv[0]) + '/..')
     btstack_root = os.path.abspath(os.path.dirname(os.path.abspath(sys.argv[0])) + '/..') #こちらに変更
     gen_path = btstack_root + '/src/bluetooth_gatt.h'
 ```
@@ -57,7 +57,7 @@ integrate_btstack.shではBTstackのライブラリを```${IDF_PATH}/components`
 
 
 
-```
+```shell
 $ cd ../port/esp32
 $ sed -i.bak -e 's/rsync/cp/g' integrate_btstack.sh
 $ ./integrate_btstack.sh
@@ -71,7 +71,7 @@ $ ./integrate_btstack.sh
 
 次にhog_mouse_exampleを```make flash```してみます。
 
-```
+```shell
 $ cd example/hog_mouse_demo
 $ make menuconfig flash monitor
 ```
