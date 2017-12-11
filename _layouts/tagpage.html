@@ -2,22 +2,24 @@
 layout: default
 ---
 
-<h1>{{ page.tag }}</h1>
+<h1>Tag: {{ page.tag }}</h1>
 
-{% for post in site.tags[page.tag] %}
-  <article class="post">
-    <div class="date">{{ post.date | date: "%F" }}</div>
-    <h1 class="post"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-    {% for tag in post.tags %}
-    <a href="/tags/{{ tag }}" class="tags">{{ tag }}</a>
-    {% endfor %}
+<div class="posts">
+  {% for post in site.tags[page.tag] %}
+    <article class="post">
+      <div class="date">{{ post.date | date: "%F" }}</div>
+      <h1 class="post"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      {% for tag in post.tags %}
+      <a href="/tags/{{ tag }}" class="tags">{{ tag }}</a>
+      {% endfor %}
 
-    <section class="post-excerpt" itemprop="description">
-    {% if post.outline %}
-    <p>{{ post.outline }}</p>
-    {% else %}
-    <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
-    {% endif %}
-    </section>
-  </article>
-{% endfor %}
+      <section class="post-excerpt" itemprop="description">
+      {% if post.outline %}
+      <p>{{ post.outline }}</p>
+      {% else %}
+      <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+      </section>
+    </article>
+  {% endfor %}
+</div>
