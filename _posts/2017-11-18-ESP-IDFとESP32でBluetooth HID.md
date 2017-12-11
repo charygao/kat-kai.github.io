@@ -5,6 +5,7 @@ outline: Espressif社より先行公開されたBluetooth HIDデバイスのデ�
 tags: 
 - ESP32
 - ESP-IDF
+- Bluetooth
 - BLE
 - HID
 ---
