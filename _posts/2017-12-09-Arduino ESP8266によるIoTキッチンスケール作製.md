@@ -168,7 +168,7 @@ ESP32かESP8266を使って、また別のものを作ってみたいと思い�
 後ほどGitHubにアップロードします。  
 
 ### ESP8266_scale.ino
-```
+```c
 #include "HX711.h"
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
@@ -249,7 +249,7 @@ void loop() {
 ```
 
 ### index.html
-```
+```html
     <head>
         <title>ESP8266 scale</title>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
