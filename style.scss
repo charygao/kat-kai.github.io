@@ -276,6 +276,10 @@ nav {
 // .main
 //
 
+article.post {
+  padding-top: 1em;
+}
+
 .posts > .post {
   // padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
@@ -289,9 +293,6 @@ nav {
 .post {
   h1 {
     margin: 0;
-  }
-  article {
-    padding-top: 1em;
   }
   blockquote {
     margin: 1.8em .8em;
