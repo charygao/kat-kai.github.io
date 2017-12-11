@@ -2,7 +2,10 @@
 layout: post
 title: Arduino ESP8266を使ったIoTキッチンスケールの作製
 outline: Arduino IDEで開発可能なWiFiモジュール ESP8266を使って、市販のキッチンスケールをIoT化しました。
-categories: [ESP8266]
+tags: 
+- Arduino
+- ESP8266
+- IoT
 ---
 
 こんにちは、kat-kaiです。[Arduino Advent Calendar 2017](https://qiita.com/advent-calendar/2017/arduino)の9日目です。  
