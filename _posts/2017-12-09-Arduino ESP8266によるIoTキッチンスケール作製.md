@@ -250,84 +250,84 @@ void loop() {
 
 ### index.html
 ```html
-    <head>
-        <title>ESP8266 scale</title>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
-    </head>
-    
-    <body>
-        <div id="canvas-holder" style="width:65%; display:inline-block">
-            <canvas id="chart-area" />
-        </div>
+<head>
+    <title>ESP8266 scale</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+</head>
 
-        <div id="weight-label" style="display:inline">test</div>
-        <script>
-            
-        var targetWeight = 300.0; //量り取りたい重さを300グラムとする
-    
-        var pieWeightData = function(w) {
-            var weight = parseFloat(w);
-            var excessWeight, currentWeight, shortageWeight;
-    
-            if (weight > targetWeight*2) {
-                excessWeight = targetWeight;
-                currentWeight = 0;
-                shortageWeight = 0;
-            } else if (weight > targetWeight) {
-                excessWeight = weight - targetWeight;
-                currentWeight = targetWeight - excessWeight;
-                shortageWeight = 0;
-            } else {
-                excessWeight = 0;
-                currentWeight = weight;
-                shortageWeight = targetWeight - weight;
-            }
+<body>
+    <div id="canvas-holder" style="width:65%; display:inline-block">
+        <canvas id="chart-area" />
+    </div>
 
-            return [excessWeight, currentWeight, shortageWeight];
-        }
+    <div id="weight-label" style="display:inline">test</div>
+    <script>
         
-        var config = {
-            type: 'pie',
-            data: {
-                datasets: [{
-                    data: [ 0, 0, 0 ],
-                    backgroundColor: [
-                        'rgb(255, 99, 132)',    //過剰分用の黄色パート
-                        'rgb(255, 205, 86)',    //現在の重量用の赤色パート
-                        'rgb(255,255,255)',     //不足分用の白色パート
-                    ],
-                }],
-            },
-            options: {
-                animation: {
-                    duration: 500
-                },
-                events: [], //eventsを何も指定しないことで、マウスオーバーイベントなくす
-                responsive: true
-            }
-        };
-    
-    
-    
-        window.onload = function() {
-            var ctx = document.getElementById("chart-area").getContext("2d");
-            window.myPie = new Chart(ctx, config);
+    var targetWeight = 300.0; //量り取りたい重さを300グラムとする
 
-            var timer = setInterval(function() {
-            $.get("/weight", function(w){
-                    $("#weight-label").text(w);
-                    config.data.datasets[0].data = pieWeightData(w);
-                    window.myPie.update()
-                    
-                });
-            }, 500);
-        };
+    var pieWeightData = function(w) {
+        var weight = parseFloat(w);
+        var excessWeight, currentWeight, shortageWeight;
+
+        if (weight > targetWeight*2) {
+            excessWeight = targetWeight;
+            currentWeight = 0;
+            shortageWeight = 0;
+        } else if (weight > targetWeight) {
+            excessWeight = weight - targetWeight;
+            currentWeight = targetWeight - excessWeight;
+            shortageWeight = 0;
+        } else {
+            excessWeight = 0;
+            currentWeight = weight;
+            shortageWeight = targetWeight - weight;
+        }
+
+        return [excessWeight, currentWeight, shortageWeight];
+    }
     
-    
-    
-        </script>
-    </body>
-    
-    </html>
+    var config = {
+        type: 'pie',
+        data: {
+            datasets: [{
+                data: [ 0, 0, 0 ],
+                backgroundColor: [
+                    'rgb(255, 99, 132)',    //過剰分用の黄色パート
+                    'rgb(255, 205, 86)',    //現在の重量用の赤色パート
+                    'rgb(255,255,255)',     //不足分用の白色パート
+                ],
+            }],
+        },
+        options: {
+            animation: {
+                duration: 500
+            },
+            events: [], //eventsを何も指定しないことで、マウスオーバーイベントなくす
+            responsive: true
+        }
+    };
+
+
+
+    window.onload = function() {
+        var ctx = document.getElementById("chart-area").getContext("2d");
+        window.myPie = new Chart(ctx, config);
+
+        var timer = setInterval(function() {
+        $.get("/weight", function(w){
+                $("#weight-label").text(w);
+                config.data.datasets[0].data = pieWeightData(w);
+                window.myPie.update()
+                
+            });
+        }, 500);
+    };
+
+
+
+    </script>
+</body>
+
+</html>
 ```
