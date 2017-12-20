@@ -79,10 +79,10 @@ ESP8266で重さを取得できるようにしつつ、Webサーバとして動�
 まずキッチンスケールの中には、「ひずみゲージ」と呼ばれるセンサーが入っています。  
 
 キッチンスケールのフタを開けると、こんな感じで中心の金属の物体が「ひずみゲージ」です(HX711/ESP8266は取り付け済み)  
-![scale1](https://user-images.githubusercontent.com/21113258/34217439-dc5ca55e-e5ee-11e7-93ef-c917a59f1c52.jpg)
+![scale1](https://user-images.githubusercontent.com/21113258/34217439-dc5ca55e-e5ee-11e7-93ef-c917a59f1c52.jpg){:style="display:block;margin-left:auto;margin-right:auto;"}
 
 この「ひずみゲージ」には赤・黒・緑・白の4本の配線があります。  
-![strain_gauge](https://user-images.githubusercontent.com/21113258/34217437-da6b8a12-e5ee-11e7-972f-7fc3f1d7f968.jpg)
+![strain_gauge](https://user-images.githubusercontent.com/21113258/34217437-da6b8a12-e5ee-11e7-972f-7fc3f1d7f968.jpg){:style="display:block;margin-left:auto;margin-right:auto;"}
 
 
 この「ひずみゲージ」に外部から力が加わると、その力の大きさに応じて  
@@ -111,7 +111,7 @@ ESP8266で重さを取得できるようにしつつ、Webサーバとして動�
 写真ではいきなり配線しているように見えますが、予めブレッドボードを使って  
 Step2を試してから配線してます。
 
-![scale2](https://user-images.githubusercontent.com/21113258/34217445-dea40294-e5ee-11e7-944c-89df196dd53e.jpg)
+![scale2](https://user-images.githubusercontent.com/21113258/34217445-dea40294-e5ee-11e7-944c-89df196dd53e.jpg){:style="display:block;margin-left:auto;margin-right:auto;"}
 
 キッチンスケール-HX711の配線は[こちらのサイト](http://barcelona.lomo.jp/wp/?p=23)を参考にさせて頂きました。  
 またFritzing ESP8266は[こちら](https://github.com/houtbrion/fritzing-parts/tree/master/ESP-WROOM-02)から使わせて頂いております。
