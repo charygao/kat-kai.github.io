@@ -24,7 +24,7 @@ ESP-WROOM-02はEspressif systems社で製造されているWiFiモジュール�
 そして、このモジュールに搭載されているマイコンがESP8266です。  
 このESP8266は、統合開発環境Arduino IDEを使って開発することができます。  
 
-![esp8266](https://user-images.githubusercontent.com/21113258/34217434-d8543c38-e5ee-11e7-9e91-819493321328.jpg)
+![esp8266](https://user-images.githubusercontent.com/21113258/34217434-d8543c38-e5ee-11e7-9e91-819493321328.jpg){:style="display:block;margin-left:auto;margin-right:auto;"}
 
 中央のチップがESP-WROOM-02 (ESP8266)でWiFiのみ、右側のチップが後続品ESP-WROOM-32 (ESP32)でWiFi/Bluetoothが使える。
 
