@@ -10,9 +10,7 @@ tags:
 - HID
 ---
 
-こんばんは、kat-kaiです。
-
-最近、ESP32でBluetooth HIDデバイスのデモコードが公開されましたので、その紹介をしたいと思います。
+こんばんは、kat-kaiです。最近、ESP32でBluetooth HIDデバイスのデモコードが公開されましたので、その紹介をしたいと思います。
 
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="ja" dir="ltr">ちなみにデモコードは、こちらの下の方<a href="https://t.co/KbFsbbXizZ">https://t.co/KbFsbbXizZ</a><br>まだ詳しく内容見れてません</p>&mdash; kat-kai (@katkai3) <a href="https://twitter.com/katkai3/status/927827470409113605?ref_src=twsrc%5Etfw">November 7, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
