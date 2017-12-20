@@ -24,7 +24,7 @@ ESP-WROOM-02はEspressif systems社で製造されているWiFiモジュール�
 そして、このモジュールに搭載されているマイコンがESP8266です。  
 このESP8266は、統合開発環境Arduino IDEを使って開発することができます。  
 
-![esp8266](https://user-images.githubusercontent.com/21113258/33793204-d1a9ccaa-dcf6-11e7-875c-0eb537d22a65.png)
+![esp8266](https://user-images.githubusercontent.com/21113258/34217434-d8543c38-e5ee-11e7-9e91-819493321328.jpg)
 
 中央のチップがESP-WROOM-02 (ESP8266)でWiFiのみ、右側のチップが後続品ESP-WROOM-32 (ESP32)でWiFi/Bluetoothが使える。
 
@@ -40,7 +40,7 @@ USBシリアル変換が搭載されている開発ボードを用いると、�
 ESP8266で重さを取得できるようにしつつ、Webサーバとして動かします。  
 そしてWiFi経由でESP8266にアクセスすることでスマートフォンでも重さを取得できるようにします。  
 
-![whole_image3_trim](https://user-images.githubusercontent.com/21113258/33708063-c3565c5c-db7c-11e7-8ce3-a51f4d731551.png)
+![scale1](https://user-images.githubusercontent.com/21113258/34217439-dc5ca55e-e5ee-11e7-93ef-c917a59f1c52.jpg)
 
 今回は赤枠の中で示すようにローカルな環境に留まっていますが  
 ネット上のレシピ等で連携できたら面白そうだなーって思います。
@@ -79,10 +79,10 @@ ESP8266で重さを取得できるようにしつつ、Webサーバとして動�
 まずキッチンスケールの中には、「ひずみゲージ」と呼ばれるセンサーが入っています。  
 
 キッチンスケールのフタを開けると、こんな感じで中心の金属の物体が「ひずみゲージ」です(HX711/ESP8266は取り付け済み)  
-![scale2](https://user-images.githubusercontent.com/21113258/33792960-98c9735e-dcf1-11e7-8eff-b4550f801af4.png)
+![strain_gauge](https://user-images.githubusercontent.com/21113258/34217437-da6b8a12-e5ee-11e7-972f-7fc3f1d7f968.jpg)
 
 この「ひずみゲージ」には赤・黒・緑・白の4本の配線があります。
-![scale4](https://user-images.githubusercontent.com/21113258/33744919-2a036556-dbf7-11e7-9f18-10a81ffe4000.png)
+![scale2](https://user-images.githubusercontent.com/21113258/34217445-dea40294-e5ee-11e7-944c-89df196dd53e.jpg)
 
 
 この「ひずみゲージ」に外部から力が加わると、その力の大きさに応じて  
