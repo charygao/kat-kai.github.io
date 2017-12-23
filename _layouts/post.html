@@ -18,6 +18,6 @@ layout: default
 <div class="entry">
   {{ content }}
 </div>
-
+  {% if page.mode == "test" %}{% include sns_share.html %}{% endif %}
   {% include disqus.html %}
 </article>
