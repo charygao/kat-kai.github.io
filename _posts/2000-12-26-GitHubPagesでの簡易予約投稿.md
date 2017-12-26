@@ -46,9 +46,7 @@ reserve: 2017-12-30 10:30:00 +0900
 を追加します。
 
 2. Articleタグに予定投稿機能を追加  
-```
-<article class="post">
-```
+```<article class="post">```  
 を  
 ```
 {% if post.reserve %}
