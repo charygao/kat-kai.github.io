@@ -46,17 +46,7 @@ reserve: 2017-12-30 10:30:00 +0900
 を追加します。
 
 2. Articleタグに予定投稿機能を追加  
-```html
-<article class="post">
-```
-を  
-```
-{% if post.reserve %}
-<article class="post" id="article" v-if="isPast(`{{ post.reserve | date_to_xmlschema }}`)">
-{% else %}
-<article class="post" id="article">
-{% endif %}
-```
+
 に変更します。後述するisPast()関数により指定した予約時間(post.reserve)が過ぎているかを判定します。
 予定時間が過ぎていればtrueを返し、```v-if="true"```となります。
 また```v-if```はVue.jsの条件付きレンダリング機能であり、trueになるまで描写されません。
