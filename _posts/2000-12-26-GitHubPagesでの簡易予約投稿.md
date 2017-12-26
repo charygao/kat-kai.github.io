@@ -39,19 +39,26 @@ reserve: 2017-12-30 10:30:00 +0900
 ### index.html
 次にindex.htmlの編集です。
 
-1. Vue.jsの読み込み  
+**1. Vue.jsの読み込み**  
 ```html
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 ```
 を追加します。
 
-2. Articleタグに予定投稿機能を追加  
+**2. Articleタグに予定投稿機能を追加**  
 
+```html
+{% if post.reserve %}
+<article class="post" id="article" v-if="isPast(`{{ post.reserve | date_to_xmlschema }}`)">
+{% else %}
+<article class="post" id="article">
+{% endif %}
+```
 に変更します。後述するisPast()関数により指定した予約時間(post.reserve)が過ぎているかを判定します。
 予定時間が過ぎていればtrueを返し、```v-if="true"```となります。
 また```v-if```はVue.jsの条件付きレンダリング機能であり、trueになるまで描写されません。
 
-3. isPast()関数の追加  
+**3. isPast()関数の追加**  
 最後に末尾に以下の<script>タグを追加して、準備は完了です。
 ```javascript
 <script>
