@@ -46,13 +46,18 @@ reserve: 2017-12-30 10:30:00 +0900
 を追加します。
 
 **2. Articleタグに予定投稿機能を追加**  
-
 ```html
+<article class="post">
+```
+を  
+```html
+{% raw %}
 {% if post.reserve %}
 <article class="post" id="article" v-if="isPast(`{{ post.reserve | date_to_xmlschema }}`)">
 {% else %}
 <article class="post" id="article">
 {% endif %}
+{% endraw %}
 ```
 に変更します。後述するisPast()関数により指定した予約時間(post.reserve)が過ぎているかを判定します。
 予定時間が過ぎていればtrueを返し、```v-if="true"```となります。
