@@ -24,17 +24,3 @@ layout: default
     </article>
   {% endfor %}
 </div>
-
-  <script>
-  var app = new Vue({
-    el: '#articles',
-    methods: {
-        isPast: function(strXmlSchema) {
-            var now = new Date().getTime();
-            var rsvTime = new Date(strXmlSchema).getTime();
-
-            return (now > rsvTime);
-        }
-    }
-  })
-</script>
