@@ -23,8 +23,28 @@ Jekyll自体には予約投稿を可能にするsite.futureオプションがあ
 
 ## 予約投稿機能を使うための変更箇所
 変更を加えるファイルは以下の通りです。
+- _layouts/default.html
 - _posts/*.mdファイル
 - index.html
+
+### _layouts/default.html  
+
+body要素内の末尾に以下を追加します。  
+```javascript
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+  var app = new Vue({
+    el: '#articles',
+    methods: {
+      isPast: function(strXmlSchema) {
+        return (new Date().getTime() > new Date(strXmlSchema).getTime());
+      }
+    }
+  })
+</script>
+```
+Vue.js (執筆時点ではv2.5.13) を読み込み、予約時刻が過ぎていればtrueを返すisPast()関数を追加します。
+
 
 ### *.mdファイル
 .mdファイルの先頭の箇所に、公開予定日時をreserveに書き加えるだけです。
@@ -40,46 +60,24 @@ reserve: 2017-12-30 10:30:00 +0900
 ### index.html
 次にindex.htmlの編集です。
 
-**1. Vue.jsの読み込み**  
+- Articleタグに予定投稿機能を追加  
 ```html
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-```
-を追加します。
-
-**2. Articleタグに予定投稿機能を追加**  
-```html
-<article class="post">
+{% raw %}<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">{% endraw %}
 ```
 を  
 ```html
-{% raw %}{% if post.reserve %}
-<article class="post" id="article" v-if="isPast(`{{ post.reserve | date_to_xmlschema }}`)">
-{% else %}
-<article class="post" id="article">
-{% endif %}{% endraw %}
+{% raw %}<div class="posts" id="articles">
+  {% for post in site.posts %}
+    {% if post.reserve %}
+    <article class="post" v-if="isPast(`{{ post.reserve | date_to_xmlschema }}`)">
+    {% else %}
+    <article class="post">
+    {% endif %}{% endraw %}
 ```
-に変更します。後述するisPast()関数により指定した予約時間(post.reserve)が過ぎているかを判定します。
-予定時間が過ぎていればtrueを返し、```v-if="true"```となります。
+に変更します。予定時間が過ぎていればisPast()関数はtrueを返し、```v-if="true"```となります。
 また```v-if```はVue.jsの条件付きレンダリング機能であり、trueになるまで描写されません。
-
-**3. isPast()関数の追加**  
-最後に末尾に以下の<script>タグを追加して、準備は完了です。
-```javascript
-<script>
-  var app = new Vue({
-    el: '#article',
-    methods: {
-        isPast: function(strXmlSchema) {
-            var now = new Date().getTime();
-            var rsvTime = new Date(strXmlSchema).getTime();
-
-            return (now > rsvTime);
-        }
-    }
-  })
-</script>
-```
-変数now, rsvTimeには、それぞれ現在時刻・予約時刻の1970年1月1日0時0分0秒を起点とした経過ミリ秒が代入されています。
 
 ## 使い方
 *.mdファイル中でJekyllの変数であるpage.dateで指定します。  
