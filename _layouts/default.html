@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     {% include analytics.html %}
@@ -52,5 +53,18 @@
       </div>
     </div>
   </body>
+  <script>
+    var app = new Vue({
+      el: '#articles',
+      methods: {
+          isPast: function(strXmlSchema) {
+              var now = new Date().getTime();
+              var rsvTime = new Date(strXmlSchema).getTime();
+
+              return (now > rsvTime);
+          }
+      }
+    })
+  </script>
   <script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
 </html>
