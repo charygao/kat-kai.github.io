@@ -1,14 +1,12 @@
 ---
 layout: default
 ---
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-
-<div class="posts">
+<div class="posts" id="articles">
   {% for post in site.posts %}
     {% if post.reserve %}
-    <article class="post" id="article" v-if="isPast(`{{ post.reserve | date_to_xmlschema }}`)">
+    <article class="post" v-if="isPast(`{{ post.reserve | date_to_xmlschema }}`)">
     {% else %}
-    <article class="post" id="article">
+    <article class="post">
     {% endif %}
       <div class="date">{{ post.date | date: "%F" }}</div>
       <h1 class="post"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
