@@ -34,7 +34,7 @@ layout: default
         isPast: function(strXmlSchema) {
             var now = new Date().getTime();
             var rsvTime = new Date(strXmlSchema).getTime();
-            console.log(now, rsvTime);
+
             return (now > rsvTime);
         }
     }
