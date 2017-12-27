@@ -14,8 +14,8 @@ Jekyll自体には予約投稿を可能にするsite.futureオプションがあ
 - [blogs - Is it possible to schedule posts with Jekyll? - Stack Overflow](https://stackoverflow.com/questions/4923867/is-it-possible-to-schedule-posts-with-jekyll)
 - [github pages + jekyll で予約投稿 - Xeebi](https://lesguillemets.github.io/blog/2014/06/26/jekyll-future.html)
 
-実装内容としては、Vue.js (JavaScript)を使って予定時間より前であれば非表示するだけのシンプルな実装です。  
-つまりトップページからはリンクが見えなくなっているだけで、記事自体は公開状態になっているため、その記事のアドレスが分かれば、誰でもアクセスすることは可能になります。あくまでも擬似的な予約投稿となりますので、その点はお気をつけください。  
+実装内容としては、Vue.js (JavaScript)を使って予定時間より前であれば非表示するだけのシンプルな実装です。つまりトップページからはリンクが見えなくなっているだけで、記事自体は公開状態になっているため、その記事のアドレスが分かれば、誰でもアクセスすることは可能になります。あくまでも擬似的な予約投稿となりますので、その点はお気をつけください。
+
 私にとっては、この程度の機能で十分でしたので、本ブログで使っています。
 
 本記事の以下に示すコードはご自由にご利用ください。ただし不具合等が生じても一切、責任は負いません。
