@@ -20,10 +20,12 @@ tags:
 
 
 ## 仕組み
-まず投稿する.mdファイルのFront-matterで、投稿予定時刻を示す変数reserveをセットします。  
-```reserve: 2017-12-30 10:30:00 +0900```
+まず投稿する.mdファイルのFront-matterで、投稿予定時刻を示す変数reserveをセットします。    
+```
+reserve: 2017-12-30 10:30:00 +0900
+```
 
-そして変数reserveの値を元に、index.htmlで記事毎に以下のように出力します。
+この変数reserveの値を元に、index.htmlで記事毎に以下のように出力します。
 ```
 <article class="post" v-if="isPast(`2017-12-30T10:30:00+0900`)">
   (記事の日付, タイトル等)
