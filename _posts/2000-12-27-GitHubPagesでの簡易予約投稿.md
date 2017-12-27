@@ -2,7 +2,7 @@
 layout: post
 title: Vue.jsを使ったGitHub Pages+Jekyllでの簡易予約投稿
 outline: JavaScriptフレームワークであるVue.jsを使って、GitHub Pagesに簡易的な予約投稿機能を実装しました。単に予約時刻以前であれば、トップページからのリンクを非表示にしているだけなので擬似的な予約投稿となります。
-reserve: 2017-12-27 18:50:00 +0900
+reserve: 2017-12-27 19:00:00 +0900
 published: true
 tags: 
 - GitHubPages
@@ -21,7 +21,7 @@ Jekyll自体には予約投稿を可能にするsite.futureオプションがあ
 本記事の以下に示すコードはご自由にご利用ください。ただし不具合等が生じても一切、責任は負いません。
 
 ## 仕組み
-まず投稿する.mdファイルのFront-matterで、投稿予定時刻を示す変数reserveをセットします。
+まず投稿する.mdファイルのFront-matterで、投稿予定時刻を示す変数reserveをセットします。  
 ```reserve: 2017-12-30 10:30:00 +0900```
 
 そして変数reserveの値を元に、index.htmlで記事毎に以下のように出力します。
