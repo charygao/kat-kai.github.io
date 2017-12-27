@@ -2,11 +2,11 @@
 layout: post
 title: Vue.jsを使ったGitHub Pages+Jekyllでの簡易予約投稿
 outline: JavaScriptフレームワークであるVue.jsを使って、GitHub Pagesに簡易的な予約投稿機能を実装しました。単に予約時刻以前であれば、トップページからのリンクを非表示にしているだけなので擬似的な予約投稿となります。
-reserve: 2017-12-27 18:45:00 +0900
+reserve: 2017-12-27 18:50:00 +0900
 published: true
 tags: 
 - GitHubPages
-- Vue.js
+- Vuejs
 ---
 こんばんは、kat-kai ([@katkai3](https://twitter.com/katkai3)) です。本記事ではVue.jsを使ってGitHub Pages+Jekyllの予約投稿の実装について書いています。GitHub Pagesでの予約投稿(Schedule post)に関して調べてみたんですが、解決方法が無さそうだったので、今回作ってみました。
 
