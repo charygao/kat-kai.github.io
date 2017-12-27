@@ -74,14 +74,13 @@ reserve: 2017-12-30 10:30:00 +0900
 書き加えなければ、通常通りで投稿後にトップページに表示されます。
 
 ### index.html
-次にindex.htmlの編集です。
+次にindex.htmlの編集です。Articleタグに予定投稿機能を追加するために、以下のように変更します。
 
-- Articleタグに予定投稿機能を追加  
 ```html
 {% raw %}<div class="posts">
   {% for post in site.posts %}
     <article class="post">{% endraw %}
-```
+```  
 を  
 ```html
 {% raw %}<div class="posts" id="articles">
@@ -91,7 +90,7 @@ reserve: 2017-12-30 10:30:00 +0900
     {% else %}
     <article class="post">
     {% endif %}{% endraw %}
-```
+```  
 に変更します。
 
 ## 使い方
