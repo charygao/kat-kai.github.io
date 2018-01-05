@@ -48,11 +48,11 @@ ESP8266で重さを取得できるようにしつつ、Webサーバとして動�
 それでは以下のような手順でしていきたいと思います。
 
 [使ったもの](#使ったもの){:rel="nofollow"}  
-[キッチンスケールの仕組み](#キッチンスケールの仕組み)  
-[Step1. ESP8266で重さを取得する回路を組む](#step1-esp8266で重さを取得する回路を組む)  
-[Step2. Arduino ESP8266/HX711を使った重さの取得/校正](#step2-arduino-esp8266hx711を使った重さの取得校正)  
-[Step3. Arduino ESP8266によるWebサーバーの実装](#step3-arduino-esp8266によるwebサーバーの実装)  
-[Step4. インターフェイスの作成](#step4-インターフェイスの作成)  
+[キッチンスケールの仕組み](#キッチンスケールの仕組み){:rel="nofollow"}  
+[Step1. ESP8266で重さを取得する回路を組む](#step1-esp8266で重さを取得する回路を組む){:rel="nofollow"}  
+[Step2. Arduino ESP8266/HX711を使った重さの取得/校正](#step2-arduino-esp8266hx711を使った重さの取得校正){:rel="nofollow"}  
+[Step3. Arduino ESP8266によるWebサーバーの実装](#step3-arduino-esp8266によるwebサーバーの実装){:rel="nofollow"}  
+[Step4. インターフェイスの作成](#step4-インターフェイスの作成){:rel="nofollow"}  
 
 ## 使ったもの
 - タニタ キッチンスケール KF-100-WH
